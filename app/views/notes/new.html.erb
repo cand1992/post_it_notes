@@ -1,0 +1,16 @@
+<h1>Post a new Note!</h1>
+<%= form_for @note do |f| %>
+	<p>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	</p>
+	<p>
+	<%= f.label :author %>
+	<%= f.text_field :author %>
+	</p>
+	<p>
+	<%= f.label :body%>
+	<%= f.text_area :body %>
+	</p>
+	<%= f.submit %>
+<% end %>	
